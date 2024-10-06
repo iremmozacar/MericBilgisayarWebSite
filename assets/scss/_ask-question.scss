@@ -1,7 +1,7 @@
-
-.ask-questions{
+.ask-questions {
     position: relative;
-    &::before{
+
+    &::before {
         position: absolute;
         top: 0;
         content: "";
@@ -11,35 +11,44 @@
         z-index: 1;
         right: 0;
     }
-    .single-question{
-        span{
+
+    .single-question {
+        span {
             color: #fff;
             font-size: 20px;
         }
-        .pera{
-            padding-left: 28px; 
-            h2{
+
+        .pera {
+            padding-left: 28px;
+
+            h2 {
                 color: #fff;
                 font-size: 20px;
                 margin-bottom: 21px;
                 line-height: 1.5;
             }
-            p{
-                color: rgba(255, 255, 255,0.6);
+
+            p {
+                color: rgba(255, 255, 255, 0.6);
                 font-size: 15px;
             }
+
             line-height: 1.5;
         }
-        &.single-question2{
-            span{
-                color: #4C1E51;
+
+        &.single-question2 {
+            span {
+                color: #00204A;
             }
-            .pera{
-                padding-left: 28px; 
-                h2{
-                    color: #4C1E51;
+
+            .pera {
+                padding-left: 28px;
+
+                h2 {
+                    color: #00204A;
                 }
-                p{
+
+                p {
                     color: #707070;
                     font-size: 15px;
                 }

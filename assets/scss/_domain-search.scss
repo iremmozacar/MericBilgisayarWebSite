@@ -1,33 +1,40 @@
-.domain-search-area{
+.domain-search-area {
     h2 {
         color: #fff;
         font-size: 30px;
         font-weight: 600;
         margin-bottom: 20px;
-        @media #{$xs}{
+
+        @media #{$xs} {
             font-size: 26px;
         }
     }
-    p{
+
+    p {
         color: #A5A7C5;
         font-size: 14px;
-        @media #{$md}{
+
+        @media #{$md} {
             margin-bottom: 50px;
         }
-        @media #{$sm}{
+
+        @media #{$sm} {
             margin-bottom: 40px;
         }
-        @media #{$xs}{
+
+        @media #{$xs} {
             margin-bottom: 40px;
         }
     }
 }
-// Hero From
- form.search-box{
 
-    .input-form{
+// Hero From
+form.search-box {
+
+    .input-form {
         position: relative;
-        input{
+
+        input {
             height: 65px;
             width: 100%;
             color: #777777;
@@ -36,27 +43,33 @@
             padding: 9px 33px 9px 76px;
             border: none;
             border-radius: 30px;
-            @media #{$xs}{
+
+            @media #{$xs} {
                 margin-bottom: 20px;
             }
-            @media #{$sm}{
+
+            @media #{$sm} {
                 padding: 9px 33px 9px 71px;
             }
+
             &::placeholder {
                 color: #616875;
-                @media #{$xs}{
+
+                @media #{$xs} {
                     font-size: 13px;
-                    
+
                 }
             }
         }
+
         // Search
-        .search-form{
+        .search-form {
             position: absolute;
             right: 9px;
             top: 8px;
-            button{
-               @extend %btn-bgs;
+
+            button {
+                @extend %btn-bgs;
                 text-align: center;
                 color: #fff;
                 font-size: 21px;
@@ -68,18 +81,21 @@
                 line-height: 52px;
                 border: 0;
             }
-            i{
+
+            i {
                 position: relative;
                 left: 2px;
                 top: 3px;
             }
         }
+
         // World
-        .world-form{
+        .world-form {
             position: absolute;
             left: 21px;
             top: 8px;
-            i{
+
+            i {
                 color: #c4c4c4;
                 font-size: 32px;
                 display: block;
@@ -90,10 +106,11 @@
 }
 
 // Domain List 
-.single-domain{
-    ul{
+.single-domain {
+    ul {
         text-align: center;
-        li{
+
+        li {
             display: inline-block;
             padding-right: 25px;
             position: relative;
@@ -101,33 +118,41 @@
             padding-right: 10px;
             margin-right: 11px;
 
-            @media #{$sm}{
+            @media #{$sm} {
                 padding-right: 10px;
                 margin-right: 11px
             }
-            &:last-child{
+
+            &:last-child {
                 padding-right: 0px;
                 margin-right: 0px;
             }
+
             // Color Child Span
             &:nth-child(1) {
-                color:#ff7474;
+                color: #ff7474;
             }
+
             &:nth-child(2) {
                 color: #ffdd74;
             }
+
             &:nth-child(3) {
                 color: #74ff9f;
             }
+
             &:nth-child(4) {
-                 color: #748bff;
+                color: #748bff;
             }
+
             &:nth-child(n+5) {
-                color: #f074ff;
+                color: #005792;
             }
+
             // border left
             position: relative;
-            &::before{
+
+            &::before {
                 position: absolute;
                 content: "";
                 width: 1px;
@@ -137,24 +162,28 @@
                 background: #73469F;
 
             }
-            &:last-child{
-                &::before{
+
+            &:last-child {
+                &::before {
                     display: none;
                 }
             }
-            span{
+
+            span {
                 font-size: 20px;
                 font-weight: 400;
                 display: inline-block;
                 padding-right: 11px;
             }
-            p{
+
+            p {
                 margin: 0;
                 color: #fff;
                 display: inline-block;
             }
         }
     }
-    
+
 }
+
 // Domain end

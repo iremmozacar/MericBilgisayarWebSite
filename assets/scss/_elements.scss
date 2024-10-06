@@ -5,7 +5,10 @@ $info: #38a4ff;
 $warning: #f4e700;
 $danger: #f44a40;
 $link: #f9f9ff;
-$disable: (#222222, .3);
+$disable: (
+    #222222,
+    .3
+);
 $primary-color: #7c32ff;
 $primary-color1: #c738d8;
 $title-color: #415094;
@@ -51,7 +54,7 @@ $black: #000;
     filter: $filter-type+unquote("(#{$filter-amount})");
 }
 
-@mixin gradient($deg, $args1,$args2){
+@mixin gradient($deg, $args1, $args2) {
     background: -webkit-linear-gradient($deg, $args1, $args2);
     background: -moz-linear-gradient($deg, $args1, $args2);
     background: -o-linear-gradient($deg, $args1, $args2);
@@ -73,6 +76,7 @@ $black: #000;
     -o-animation: $args;
     animation: $args;
 }
+
 .sample-text-area {
     background: $white;
     padding: 100px 0 70px 0;
@@ -92,6 +96,7 @@ del {
 }
 
 .typography {
+
     h1,
     h2,
     h3,
@@ -107,6 +112,7 @@ del {
         padding: 70px 15px;
         border-top: 1px dotted #eee;
     }
+
     background: $white;
 }
 
@@ -114,6 +120,7 @@ del {
     .genric-btn {
         margin-right: 10px;
         margin-top: 10px;
+
         &:last-child {
             margin-right: 0;
         }
@@ -131,28 +138,36 @@ del {
     font-weight: 500;
     cursor: pointer;
     @include transition();
+
     &:focus {
         outline: none;
     }
+
     &.e-large {
         padding: 0 40px;
         line-height: 50px;
     }
+
     &.large {
         line-height: 45px;
     }
+
     &.medium {
         line-height: 30px;
     }
+
     &.small {
         line-height: 25px;
     }
+
     &.radius {
         border-radius: 3px;
     }
+
     &.circle {
         border-radius: 20px;
     }
+
     &.arrow {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
@@ -160,150 +175,180 @@ del {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+
         span {
             margin-left: 10px;
         }
     }
+
     &.default {
         color: $title-color;
         background: $default;
         border: 1px solid transparent;
+
         &:hover {
             border: 1px solid $default;
             background: $white;
         }
     }
+
     &.default-border {
         border: 1px solid $default;
         background: $white;
+
         &:hover {
             color: $title-color;
             background: $default;
             border: 1px solid transparent;
         }
     }
+
     &.primary {
         color: $white;
         background: $primary;
         border: 1px solid transparent;
+
         &:hover {
             color: $primary;
             border: 1px solid $primary;
             background: $white;
         }
     }
+
     &.primary-border {
         color: $primary;
         border: 1px solid $primary;
         background: $white;
+
         &:hover {
             color: $white;
             background: $primary;
             border: 1px solid transparent;
         }
     }
+
     &.success {
         color: $white;
         background: $success;
         border: 1px solid transparent;
+
         &:hover {
             color: $success;
             border: 1px solid $success;
             background: $white;
         }
     }
+
     &.success-border {
         color: $success;
         border: 1px solid $success;
         background: $white;
+
         &:hover {
             color: $white;
             background: $success;
             border: 1px solid transparent;
         }
     }
+
     &.info {
         color: $white;
         background: $info;
         border: 1px solid transparent;
+
         &:hover {
             color: $info;
             border: 1px solid $info;
             background: $white;
         }
     }
+
     &.info-border {
         color: $info;
         border: 1px solid $info;
         background: $white;
+
         &:hover {
             color: $white;
             background: $info;
             border: 1px solid transparent;
         }
     }
+
     &.warning {
         color: $white;
         background: $warning;
         border: 1px solid transparent;
+
         &:hover {
             color: $warning;
             border: 1px solid $warning;
             background: $white;
         }
     }
+
     &.warning-border {
         color: $warning;
         border: 1px solid $warning;
         background: $white;
+
         &:hover {
             color: $white;
             background: $warning;
             border: 1px solid transparent;
         }
     }
+
     &.danger {
         color: $white;
         background: $danger;
         border: 1px solid transparent;
+
         &:hover {
             color: $danger;
             border: 1px solid $danger;
             background: $white;
         }
     }
+
     &.danger-border {
         color: $danger;
         border: 1px solid $danger;
         background: $white;
+
         &:hover {
             color: $white;
             background: $danger;
             border: 1px solid transparent;
         }
     }
+
     &.link {
         color: $title-color;
         background: $link;
         text-decoration: underline;
         border: 1px solid transparent;
+
         &:hover {
             color: $title-color;
             border: 1px solid $link;
             background: $white;
         }
     }
+
     &.link-border {
         color: $title-color;
         border: 1px solid $link;
         background: $white;
         text-decoration: underline;
+
         &:hover {
             color: $title-color;
             background: $link;
             border: 1px solid transparent;
         }
     }
+
     &.disable {
         color: $disable;
         background: $link;
@@ -326,22 +371,28 @@ del {
     background: #f9f9ff;
     padding: 15px 0px 30px 0px;
     min-width: 800px;
+
     .serial {
         width: 11.83%;
         padding-left: 30px;
     }
+
     .country {
         width: 28.07%;
     }
+
     .visit {
         width: 19.74%;
     }
+
     .percentage {
         width: 40.36%;
         padding-right: 50px;
     }
+
     .table-head {
         display: flex;
+
         .serial,
         .country,
         .visit,
@@ -352,10 +403,12 @@ del {
             font-weight: 500;
         }
     }
+
     .table-row {
         padding: 15px 0;
         border-top: 1px solid #edf3fd;
         display: flex;
+
         .serial,
         .country,
         .visit,
@@ -363,40 +416,51 @@ del {
             display: flex;
             align-items: center;
         }
+
         .country {
             img {
                 margin-right: 15px;
             }
         }
+
         .percentage {
             .progress {
                 width: 80%;
                 border-radius: 0px;
                 background: transparent;
+
                 .progress-bar {
                     height: 5px;
                     line-height: 5px;
+
                     &.color-1 {
-                        background-color: #6382e6;
+                        background-color: #00A9FF;
                     }
+
                     &.color-2 {
                         background-color: #e66686;
                     }
+
                     &.color-3 {
                         background-color: #f09359;
                     }
+
                     &.color-4 {
                         background-color: #73fbaf;
                     }
+
                     &.color-5 {
                         background-color: #73fbaf;
                     }
+
                     &.color-6 {
-                        background-color: #6382e6;
+                        background-color: #00A9FF;
                     }
+
                     &.color-7 {
                         background-color: #a367e7;
                     }
+
                     &.color-8 {
                         background-color: #e66686;
                     }
@@ -424,6 +488,7 @@ del {
         position: relative;
         padding-left: 30px;
         line-height: 1.82em !important;
+
         &:before {
             content: "";
             position: absolute;
@@ -440,11 +505,13 @@ del {
 
 .ordered-list {
     margin-left: 30px;
+
     li {
         list-style-type: decimal-leading-zero;
         color: $primary;
         font-weight: 500;
         line-height: 1.82em !important;
+
         span {
             font-weight: 300;
             color: $text-color;
@@ -459,6 +526,7 @@ del {
         color: $primary;
         font-weight: 500;
         line-height: 1.82em !important;
+
         span {
             font-weight: 300;
             color: $text-color;
@@ -473,6 +541,7 @@ del {
         color: $primary;
         font-weight: 500;
         line-height: 1.82em !important;
+
         span {
             font-weight: 300;
             color: $text-color;
@@ -488,6 +557,7 @@ del {
     outline: none;
     background: #f9f9ff;
     padding: 0 20px;
+
     &:focus {
         outline: none;
     }
@@ -495,16 +565,20 @@ del {
 
 .input-group-icon {
     position: relative;
+
     .icon {
         position: absolute;
         left: 20px;
         top: 0;
         line-height: 40px;
+
         i {
             color: #797979;
         }
+
         z-index: 3;
     }
+
     .single-input {
         padding-left: 45px;
     }
@@ -520,6 +594,7 @@ del {
     padding: 0 20px;
     height: 100px;
     resize: none;
+
     &:focus {
         outline: none;
     }
@@ -533,6 +608,7 @@ del {
     outline: none;
     background: #f9f9ff;
     padding: 0 20px;
+
     &:focus {
         outline: none;
         border: 1px solid $primary;
@@ -547,6 +623,7 @@ del {
     outline: none;
     background: #f9f9ff;
     padding: 0 20px;
+
     &:focus {
         outline: none;
         border: 1px solid #eb6b55;
@@ -561,6 +638,7 @@ del {
     outline: none;
     background: #f9f9ff;
     padding: 0 20px;
+
     &:focus {
         outline: none;
         border: 1px solid #f09359;
@@ -574,6 +652,7 @@ del {
     background: #f9f9ff;
     position: relative;
     cursor: pointer;
+
     input {
         position: absolute;
         left: 0;
@@ -584,6 +663,7 @@ del {
         height: 100%;
         opacity: 0;
         cursor: pointer;
+
         +label {
             position: absolute;
             top: 1px;
@@ -596,6 +676,7 @@ del {
             box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
             cursor: pointer;
         }
+
         &:checked {
             +label {
                 left: 19px;
@@ -611,6 +692,7 @@ del {
     background: #f9f9ff;
     position: relative;
     cursor: pointer;
+
     input {
         position: absolute;
         left: 0;
@@ -620,6 +702,7 @@ del {
         width: 100%;
         height: 100%;
         opacity: 0;
+
         +label {
             position: absolute;
             left: 0;
@@ -628,6 +711,7 @@ del {
             bottom: 0;
             width: 100%;
             height: 100%;
+
             &:before {
                 content: "";
                 position: absolute;
@@ -642,6 +726,7 @@ del {
                 cursor: pointer;
                 @include transition (all .2s);
             }
+
             &:after {
                 content: "";
                 position: absolute;
@@ -656,11 +741,13 @@ del {
                 cursor: pointer;
             }
         }
+
         &:checked {
             +label {
                 &:after {
                     left: 19px;
                 }
+
                 &:before {
                     background: $primary;
                 }
@@ -676,6 +763,7 @@ del {
     background: #f9f9ff;
     position: relative;
     cursor: pointer;
+
     input {
         position: absolute;
         left: 0;
@@ -685,6 +773,7 @@ del {
         width: 100%;
         height: 100%;
         opacity: 0;
+
         +label {
             position: absolute;
             left: 0;
@@ -693,6 +782,7 @@ del {
             bottom: 0;
             width: 100%;
             height: 100%;
+
             &:before {
                 content: "";
                 position: absolute;
@@ -707,6 +797,7 @@ del {
                 @include transition (all .2s);
                 cursor: pointer;
             }
+
             &:after {
                 content: "";
                 position: absolute;
@@ -721,11 +812,13 @@ del {
                 cursor: pointer;
             }
         }
+
         &:checked {
             +label {
                 &:after {
                     left: 19px;
                 }
+
                 &:before {
                     background: $success;
                 }
@@ -741,6 +834,7 @@ del {
     background: #f9f9ff;
     position: relative;
     cursor: pointer;
+
     input {
         position: absolute;
         left: 0;
@@ -750,6 +844,7 @@ del {
         width: 100%;
         height: 100%;
         opacity: 0;
+
         +label {
             position: absolute;
             left: 0;
@@ -762,6 +857,7 @@ del {
             cursor: pointer;
             border: 1px solid #f1f1f1;
         }
+
         &:checked {
             +label {
                 background: url(../img/elements/primary-check.png) no-repeat center center/cover;
@@ -778,6 +874,7 @@ del {
     background: #f9f9ff;
     position: relative;
     cursor: pointer;
+
     input {
         position: absolute;
         left: 0;
@@ -787,6 +884,7 @@ del {
         width: 100%;
         height: 100%;
         opacity: 0;
+
         +label {
             position: absolute;
             left: 0;
@@ -799,6 +897,7 @@ del {
             cursor: pointer;
             border: 1px solid #f1f1f1;
         }
+
         &:checked {
             +label {
                 background: url(../img/elements/success-check.png) no-repeat center center/cover;
@@ -815,6 +914,7 @@ del {
     background: #f9f9ff;
     position: relative;
     cursor: pointer;
+
     input {
         position: absolute;
         left: 0;
@@ -824,6 +924,7 @@ del {
         width: 100%;
         height: 100%;
         opacity: 0;
+
         +label {
             position: absolute;
             left: 0;
@@ -836,10 +937,12 @@ del {
             cursor: pointer;
             border: 1px solid #f1f1f1;
         }
+
         &:disabled {
             cursor: not-allowed;
             z-index: 3;
         }
+
         &:checked {
             +label {
                 background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
@@ -856,6 +959,7 @@ del {
     background: #f9f9ff;
     position: relative;
     cursor: pointer;
+
     input {
         position: absolute;
         left: 0;
@@ -865,6 +969,7 @@ del {
         width: 100%;
         height: 100%;
         opacity: 0;
+
         +label {
             position: absolute;
             left: 0;
@@ -877,6 +982,7 @@ del {
             cursor: pointer;
             border: 1px solid #f1f1f1;
         }
+
         &:checked {
             +label {
                 background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
@@ -893,6 +999,7 @@ del {
     background: #f9f9ff;
     position: relative;
     cursor: pointer;
+
     input {
         position: absolute;
         left: 0;
@@ -902,6 +1009,7 @@ del {
         width: 100%;
         height: 100%;
         opacity: 0;
+
         +label {
             position: absolute;
             left: 0;
@@ -914,6 +1022,7 @@ del {
             cursor: pointer;
             border: 1px solid #f1f1f1;
         }
+
         &:checked {
             +label {
                 background: url(../img/elements/success-radio.png) no-repeat center center/cover;
@@ -930,6 +1039,7 @@ del {
     background: #f9f9ff;
     position: relative;
     cursor: pointer;
+
     input {
         position: absolute;
         left: 0;
@@ -939,6 +1049,7 @@ del {
         width: 100%;
         height: 100%;
         opacity: 0;
+
         +label {
             position: absolute;
             left: 0;
@@ -951,10 +1062,12 @@ del {
             cursor: pointer;
             border: 1px solid #f1f1f1;
         }
+
         &:disabled {
             cursor: not-allowed;
             z-index: 3;
         }
+
         &:checked {
             +label {
                 background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
@@ -966,6 +1079,7 @@ del {
 
 .default-select {
     height: 40px;
+
     .nice-select {
         border: none;
         border-radius: 0px;
@@ -973,6 +1087,7 @@ del {
         background: #f9f9ff;
         padding-left: 20px;
         padding-right: 40px;
+
         .list {
             margin-top: 0;
             border: none;
@@ -980,6 +1095,7 @@ del {
             box-shadow: none;
             width: 100%;
             padding: 10px 0 10px 0px;
+
             .option {
                 font-weight: 300;
                 @include transition();
@@ -987,10 +1103,12 @@ del {
                 min-height: 28px;
                 font-size: 12px;
                 padding-left: 20px;
+
                 &.selected {
                     color: $primary;
                     background: transparent;
                 }
+
                 &:hover {
                     color: $primary;
                     background: transparent;
@@ -998,10 +1116,12 @@ del {
             }
         }
     }
+
     .current {
         margin-right: 50px;
         font-weight: 300;
     }
+
     .nice-select::after {
         right: 20px;
     }
@@ -1010,6 +1130,7 @@ del {
 .form-select {
     height: 40px;
     width: 100%;
+
     .nice-select {
         border: none;
         border-radius: 0px;
@@ -1018,6 +1139,7 @@ del {
         padding-left: 45px;
         padding-right: 40px;
         width: 100%;
+
         .list {
             margin-top: 0;
             border: none;
@@ -1025,6 +1147,7 @@ del {
             box-shadow: none;
             width: 100%;
             padding: 10px 0 10px 0px;
+
             .option {
                 font-weight: 300;
                 @include transition();
@@ -1032,10 +1155,12 @@ del {
                 min-height: 28px;
                 font-size: 12px;
                 padding-left: 45px;
+
                 &.selected {
                     color: $primary;
                     background: transparent;
                 }
+
                 &:hover {
                     color: $primary;
                     background: transparent;
@@ -1043,27 +1168,34 @@ del {
             }
         }
     }
+
     .current {
         margin-right: 50px;
         font-weight: 300;
     }
+
     .nice-select::after {
         right: 20px;
     }
 }
+
 .mt-10 {
     margin-top: 10px;
 }
+
 .section-top-border {
     padding: 50px 0;
     border-top: 1px dotted #eee;
 }
+
 .mb-30 {
     margin-bottom: 30px;
 }
+
 .mt-30 {
     margin-top: 30px;
 }
+
 .switch-wrap {
     margin-bottom: 10px;
 }

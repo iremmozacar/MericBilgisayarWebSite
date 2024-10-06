@@ -1,58 +1,72 @@
-.pricing-card-area{
-    &.pricing-card-area2{
+.pricing-card-area {
+    &.pricing-card-area2 {
         margin-top: -230px;
-        @media #{$md}{
+
+        @media #{$md} {
             margin-top: -130px;
         }
-        @media #{$sm}{
+
+        @media #{$sm} {
             margin-top: -130px;
         }
-        @media #{$xs}{
+
+        @media #{$xs} {
             margin-top: -130px;
         }
+
         position: unset;
-        &::before{
+
+        &::before {
             position: unset;
         }
-        &::after{
+
+        &::after {
             position: unset;
             border: 0;
         }
     }
+
     position: relative;
+
     &::before {
         position: absolute;
         content: "";
         width: 100%;
         height: 53%;
-        background: #2D0A31;
+        background: #011647;
     }
-    &::after{
+
+    &::after {
         position: absolute;
         top: 53%;
         content: "";
-        border-top: 120px solid #2D0A31;
+        border-top: 120px solid #011647;
         border-left: 2000px solid transparent;
         left: 0px;
         z-index: -11;
         right: 0;
     }
-    .single-card{
+
+    .single-card {
         background: #ffff;
         padding: 70px 0px;
-        -webkit-box-shadow: 0 8px 26px rgba(67,40,124,0.08);
+        -webkit-box-shadow: 0 8px 26px rgba(67, 40, 124, 0.08);
         border-radius: 8px;
-        .card-top{
+
+        .card-top {
             padding: 0 26px;
+
             img {
                 margin-bottom: 20px;
             }
-            p{
+
+            p {
                 color: #3B4855;
                 font-size: 15px;
                 margin-bottom: 8px;
             }
-            h4{
+
+            h4 {
                 font-size: 25px;
                 font-weight: 600;
                 line-height: 1.3;
@@ -60,34 +74,40 @@
 
             }
         }
-        .card-mid{
+
+        .card-mid {
             margin-bottom: 25px;
             padding-bottom: 26px;
             border-bottom: 1px solid #E7E6EB;
-            h4{
-                color: #4C1E51;
+
+            h4 {
+                color: #00204A;
                 font-size: 32px;
                 font-weight: 600;
-                span{
+
+                span {
                     color: #838a9b;
                     font-size: 12px;
                 }
             }
         }
-        .card-bottom{
-            ul{
-                li{
-                    color:#717081;
+
+        .card-bottom {
+            ul {
+                li {
+                    color: #717081;
                     font-weight: 300;
                     margin-bottom: 23px;
                     font-size: 16px;
-                    &:last-child{
+
+                    &:last-child {
                         margin-bottom: 46px;
                     }
                 }
             }
-            .borders-btn{
-               
+
+            .borders-btn {
+
                 color: $theme-color;
                 padding: 10px 64px;
                 background: none;
@@ -96,27 +116,27 @@
                 color: $theme-color;
                 border-radius: 30px;
                 text-transform: uppercase;
-                
-                &:hover{
+
+                &:hover {
                     @extend %btn-bgs;
                 }
             }
         }
 
         // Hover
-        &:hover{
-            .card-mid{
-                span{
-                }
-                h4{
-                }
+        &:hover {
+            .card-mid {
+                span {}
+
+                h4 {}
             }
-            .card-bottom{
-                ul{
-                    li{
-                    }
+
+            .card-bottom {
+                ul {
+                    li {}
                 }
-                .borders-btn{
+
+                .borders-btn {
                     @extend %btn-bgs;
                     color: #fff !important;
                 }
@@ -126,9 +146,9 @@
     }
 }
 
-.work-company{
+.work-company {
     .single-logo img {
-        @media #{$lg}{
+        @media #{$lg} {
             width: 100%;
         }
     }
