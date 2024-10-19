@@ -290,7 +290,7 @@ a:hover,
 
 a,
 button {
-    color: #fff;
+    color: #5f5e5e;
     outline: medium none
 }
 
@@ -3051,24 +3051,24 @@ hr {
 }
 
 .slider-height2 {
-    height: 750px
+    height: 7px
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .slider-height2 {
-        height: 550px
+        height: 200px
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .slider-height2 {
-        height: 550px
+        height: 200px
     }
 }
 
 @media (max-width: 575px) {
     .slider-height2 {
-        height: 550px
+        height: 200px
     }
 }
 
@@ -3126,6 +3126,16 @@ hr {
     }
 }
 
+
+.slider-area .hero__caption {
+    padding-top: 180px;
+    /* Yazıyı aşağı çekmek için boşluk ekler */
+}
+
+.slider-area .hero__img img {
+    margin-top: 180px;
+    /* Resmi aşağı çekmek için boşluk ekler */
+}
 .slider-area .hero__caption span {
     display: inline-block;
     color: #89CFF3;
@@ -3197,8 +3207,8 @@ hr {
 }
 
 .slider-area .hero__caption.hero__caption2 h1 {
-    font-size: 44px;
-    margin-bottom: 25px
+    font-size: 35px;
+    margin-bottom: 10px
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -3215,7 +3225,7 @@ hr {
 
 .slider-area .hero__caption.hero__caption3 h1 {
     font-size: 44px;
-    margin-bottom: 25px
+    margin-bottom: 205px
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -4192,7 +4202,7 @@ form.search-box .input-form .world-form i {
 }
 
 .footer-area .footer-pera p {
-    color: #C2C5DB;
+    color: #2a2a2e;
     padding-right: 52px;
     font-size: 16px;
     margin-bottom: 50px;
@@ -4210,7 +4220,7 @@ form.search-box .input-form .world-form i {
 }
 
 .footer-area .footer-tittle h4 {
-    color: #fff;
+    color: #433d3d;
     font-size: 22px;
     margin-bottom: 29px;
     font-weight: 500
@@ -4221,7 +4231,7 @@ form.search-box .input-form .world-form i {
 }
 
 .footer-area .footer-tittle ul li a {
-    color: #C2C5DB;
+    color: #1d1e21;
     font-weight: 300;
     text-decoration: underline transparent
 }
@@ -4278,7 +4288,7 @@ form.search-box .input-form .world-form i {
 }
 
 .footer-bottom-area .footer-copy-right p {
-    color: #C2C5DB;
+    color: #444862;
     font-weight: 300;
     font-size: 15px;
     line-height: 2;
@@ -4286,11 +4296,11 @@ form.search-box .input-form .world-form i {
 }
 
 .footer-bottom-area .footer-copy-right p i {
-    color: #fff
+    color: #3363c2
 }
 
 .footer-bottom-area .footer-copy-right p a {
-    color: #fff
+    color: #3f4351
 }
 
 .footer-social>a {
